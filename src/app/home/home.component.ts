@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
     this.getConfig();
   }
 
-  configUrl = 'https://public.opendatasoft.com/api/records/1.0/search/?dataset=fromagescsv-fromagescsv&facet=fromage';
+  configUrl = 'https://public.opendatasoft.com/api/records/1.0/search/?dataset=fromagescsv-fromagescsv&rows=20&facet=departement&facet=fromage&facet=lait';
 
   getConfig() {
     this.http.get(this.configUrl).subscribe((response) => this.data = response);

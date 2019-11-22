@@ -5,7 +5,7 @@
         <tr>
             <th>Nom</th>
             <th>Departement</th>
-            <th>Vache</th>
+            <th>Type</th>
         </tr>
     </thead>
     <tbody>
@@ -13,7 +13,8 @@
             <td>{{cheese.fields.fromage}}</td>
             <td>{{cheese.fields.departement}}</td>
             <td>{{cheese.fields.lait}}</td>
-            <td><button type="button" class="btn btn-primary btn-block action-btn" routerLink="/details/{{i}}">
+            <td><button type="button" class="btn btn-primary btn-block action-btn"
+                    routerLink="/details/{{cheese.recordid}}">
                     Details
                 </button></td>
         </tr>
